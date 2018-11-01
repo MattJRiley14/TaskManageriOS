@@ -10,6 +10,9 @@ import UIKit
 
 class TaskListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var taskTitleLabel: UILabel!
+    @IBOutlet weak var completionDateLabel: UILabel!
+    @IBOutlet weak var completionStatusView: UIView!
     
     
 

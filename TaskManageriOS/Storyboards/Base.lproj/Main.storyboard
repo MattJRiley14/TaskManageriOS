@@ -98,6 +98,11 @@
                     <navigationItem key="navigationItem" title="Task Manager" id="XiI-ER-I3p">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6CV-30-eqO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="completionDateLabel" destination="r0X-wW-pRB" id="aoM-KF-hFN"/>
+                        <outlet property="completionStatusView" destination="sMx-nu-Dcg" id="Jsd-cI-aEj"/>
+                        <outlet property="taskTitleLabel" destination="6ub-uC-jVc" id="ivG-lh-rvJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
