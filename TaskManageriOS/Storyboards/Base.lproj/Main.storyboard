@@ -13,7 +13,7 @@
         <!--Task Manager-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TaskManageriOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TaskListViewController" customModule="TaskManageriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,13 +48,13 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ub-uC-jVc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="227" height="29"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="219" height="29"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completion Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0X-wW-pRB">
-                                                    <rect key="frame" x="235" y="0.0" width="110" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec 31, 2000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0X-wW-pRB">
+                                                    <rect key="frame" x="227" y="0.0" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="110" id="yqb-Pd-4e0"/>
                                                     </constraints>
@@ -67,7 +67,7 @@
                                                 <constraint firstItem="r0X-wW-pRB" firstAttribute="leading" secondItem="6ub-uC-jVc" secondAttribute="trailing" constant="8" id="2xa-ef-LKK"/>
                                                 <constraint firstItem="6ub-uC-jVc" firstAttribute="leading" secondItem="6ef-PY-lje" secondAttribute="leading" id="CvW-vv-8CN"/>
                                                 <constraint firstItem="r0X-wW-pRB" firstAttribute="top" secondItem="6ef-PY-lje" secondAttribute="top" id="I5r-iu-mfI"/>
-                                                <constraint firstItem="sMx-nu-Dcg" firstAttribute="leading" secondItem="r0X-wW-pRB" secondAttribute="trailing" id="KuJ-ej-mhO"/>
+                                                <constraint firstItem="sMx-nu-Dcg" firstAttribute="leading" secondItem="r0X-wW-pRB" secondAttribute="trailing" constant="8" id="Rat-eO-RJr"/>
                                                 <constraint firstAttribute="bottom" secondItem="sMx-nu-Dcg" secondAttribute="bottom" id="Usi-mG-lQz"/>
                                                 <constraint firstAttribute="trailing" secondItem="sMx-nu-Dcg" secondAttribute="trailing" id="Wgy-3R-RY6"/>
                                                 <constraint firstItem="sMx-nu-Dcg" firstAttribute="top" secondItem="6ef-PY-lje" secondAttribute="top" id="rnq-nZ-fGD"/>
@@ -99,12 +99,21 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
+        <!--AddNewTask-->
+        <scene sceneID="KeE-Kk-YHF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddNewTask" id="9ip-Ab-XUi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZu-6n-waf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="-72"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ovc-yQ-F98">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gKA-Ny-Nru" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sP9-cC-qhQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
