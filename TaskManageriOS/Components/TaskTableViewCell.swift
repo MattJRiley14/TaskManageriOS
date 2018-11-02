@@ -10,6 +10,12 @@ import UIKit
 
 class TaskTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var completeByDateLabel: UILabel!
+    @IBOutlet weak var statusView: UIView!
+    
+    
+    
     
     
 

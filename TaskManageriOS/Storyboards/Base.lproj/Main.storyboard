@@ -74,6 +74,11 @@
                                                 <constraint firstItem="6ub-uC-jVc" firstAttribute="top" secondItem="6ef-PY-lje" secondAttribute="top" id="xET-pX-mao"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="completeByDateLabel" destination="r0X-wW-pRB" id="bFO-LA-ooY"/>
+                                            <outlet property="statusView" destination="sMx-nu-Dcg" id="wXH-bu-N6B"/>
+                                            <outlet property="titleLabel" destination="6ub-uC-jVc" id="rg7-cM-8qe"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -104,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1338" y="-33"/>
         </scene>
         <!--AddNewTask-->
         <scene sceneID="KeE-Kk-YHF">
