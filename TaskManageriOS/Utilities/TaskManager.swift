@@ -31,6 +31,18 @@ class TaskManager {
     func removeTask(at index: Int) {
         taskArray.remove(at: index)
     }
+    
+    func markTaskCompleteOrNot(at index: Int) {
+        let taskForIndex = taskArray[index]
+        
+        taskForIndex.notCompleted = !taskForIndex.notCompleted
+        
+        if !taskForIndex.notCompleted {
+            taskForIndex.completeByDate = nil
+        } else {
+            taskForIndex.completeByDate = Calendar.current.date(byAdding: .day, value: 14, to: Date())
+        }
+    }
 }
 
 
