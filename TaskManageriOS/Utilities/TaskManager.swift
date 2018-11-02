@@ -9,6 +9,9 @@
 import Foundation
 
 class TaskManager {
+    
+    static let sharedInstance = TaskManager()
+
     var taskArray: [Task] = [
         Task(title: "Go to Wal-Mart", taskDetails: "Buy everything on my list and Lauren's list"),
         Task(title: "Call Papi", taskDetails: "Ask him if he needs anything from the grocery store"),

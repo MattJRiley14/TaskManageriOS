@@ -69,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A513AE218B47FF00DB9393 /* Data Models */,
+				C9A513BF218CC62700DB9393 /* Components */,
 				C9A513B0218B48E300DB9393 /* Utilities */,
 				C9A513B1218B490900DB9393 /* Storyboards */,
 				C9A513AF218B48CD00DB9393 /* ViewControllers */,
@@ -115,6 +116,13 @@
 				C9A513BB218CA81500DB9393 /* TaskDetails.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C9A513BF218CC62700DB9393 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

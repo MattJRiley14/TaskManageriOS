@@ -14,6 +14,7 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var completionDateLabel: UILabel!
     @IBOutlet weak var completionStatusView: UIView!
     
+    var currentTask: Task!
     
 
     override func viewDidLoad() {
@@ -23,7 +24,7 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return TaskManager.sharedInstance.getTaskCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
