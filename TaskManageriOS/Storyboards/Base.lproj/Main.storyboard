@@ -101,7 +101,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Task Manager" id="XiI-ER-I3p">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6CV-30-eqO"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6CV-30-eqO">
+                            <connections>
+                                <segue destination="9ip-Ab-XUi" kind="show" id="LUc-lA-Igl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="taskListTableView" destination="NjG-AI-365" id="tWU-RB-kNS"/>
@@ -109,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="-33"/>
+            <point key="canvasLocation" x="1028" y="134"/>
         </scene>
         <!--AddNewTask-->
         <scene sceneID="KeE-Kk-YHF">
@@ -117,7 +121,7 @@
                 <viewControllerPlaceholder storyboardName="AddNewTask" id="9ip-Ab-XUi" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZu-6n-waf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="-73"/>
+            <point key="canvasLocation" x="1628" y="-71"/>
         </scene>
         <!--TaskDetails-->
         <scene sceneID="kIV-by-aNS">
@@ -125,7 +129,7 @@
                 <viewControllerPlaceholder storyboardName="TaskDetails" id="Bub-6y-suP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzD-aP-qf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1835" y="45"/>
+            <point key="canvasLocation" x="1622" y="164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ovc-yQ-F98">

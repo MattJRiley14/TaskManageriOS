@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OUM-YT-boo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihh-8Y-anC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="1370"/>
+            <point key="canvasLocation" x="2316" y="1384.8575712143929"/>
+        </scene>
+        <!--Add New Task-->
+        <scene sceneID="94k-SP-CIo">
+            <objects>
+                <viewController title="Add New Task" id="OUM-YT-boo" customClass="AddNewTaskViewController" customModule="TaskManageriOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Am-rM-7TC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Xgt-7e-j80">
+                                <rect key="frame" x="5" y="64" width="365" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sM-wv-khC">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="122.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSy-DK-MZB">
+                                        <rect key="frame" x="0.0" y="122.5" width="365" height="179"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ2-lK-azV">
+                                        <rect key="frame" x="0.0" y="301.5" width="365" height="122.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbv-bB-5kz">
+                                        <rect key="frame" x="0.0" y="424" width="365" height="179"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xgt-7e-j80" firstAttribute="leading" secondItem="2Eg-y9-DNJ" secondAttribute="leading" constant="5" id="5UM-to-8eG"/>
+                            <constraint firstItem="2Eg-y9-DNJ" firstAttribute="trailing" secondItem="Xgt-7e-j80" secondAttribute="trailing" constant="5" id="JCU-GO-fzF"/>
+                            <constraint firstItem="2Eg-y9-DNJ" firstAttribute="bottom" secondItem="Xgt-7e-j80" secondAttribute="bottom" id="g4k-UM-SYr"/>
+                            <constraint firstItem="Xgt-7e-j80" firstAttribute="top" secondItem="2Eg-y9-DNJ" secondAttribute="top" id="xaG-Md-005"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Eg-y9-DNJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Task" id="jsg-8I-NNQ">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="hJC-1S-7V1"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NI8-Pj-7Y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="1276"/>
         </scene>
     </scenes>
 </document>
