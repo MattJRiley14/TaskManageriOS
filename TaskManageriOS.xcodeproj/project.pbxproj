@@ -19,6 +19,7 @@
 		C9A513BA218CA2E700DB9393 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A513B9218CA2E700DB9393 /* Utilities.swift */; };
 		C9A513BC218CA81500DB9393 /* TaskDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A513BB218CA81500DB9393 /* TaskDetails.storyboard */; };
 		C9A513BE218CA8AE00DB9393 /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A513BD218CA8AE00DB9393 /* TaskDetailsViewController.swift */; };
+		C9A513C1218CC9E300DB9393 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A513C0218CC9E300DB9393 /* TaskTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C9A513B9218CA2E700DB9393 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C9A513BB218CA81500DB9393 /* TaskDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskDetails.storyboard; sourceTree = "<group>"; };
 		C9A513BD218CA8AE00DB9393 /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
+		C9A513C0218CC9E300DB9393 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		C9A513BF218CC62700DB9393 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C9A513C0218CC9E300DB9393 /* TaskTableViewCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A513C1218CC9E300DB9393 /* TaskTableViewCell.swift in Sources */,
 				C9A513BE218CA8AE00DB9393 /* TaskDetailsViewController.swift in Sources */,
 				C9A513BA218CA2E700DB9393 /* Utilities.swift in Sources */,
 				C9A5139D218B3CB400DB9393 /* TaskListViewController.swift in Sources */,
