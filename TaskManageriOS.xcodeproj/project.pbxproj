@@ -17,6 +17,7 @@
 		C9A513B6218B847C00DB9393 /* AddNewTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A513B5218B847C00DB9393 /* AddNewTask.storyboard */; };
 		C9A513B8218B85A900DB9393 /* AddNewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A513B7218B85A900DB9393 /* AddNewTaskViewController.swift */; };
 		C9A513BA218CA2E700DB9393 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A513B9218CA2E700DB9393 /* Utilities.swift */; };
+		C9A513BC218CA81500DB9393 /* TaskDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A513BB218CA81500DB9393 /* TaskDetails.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C9A513B5218B847C00DB9393 /* AddNewTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewTask.storyboard; sourceTree = "<group>"; };
 		C9A513B7218B85A900DB9393 /* AddNewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskViewController.swift; sourceTree = "<group>"; };
 		C9A513B9218CA2E700DB9393 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C9A513BB218CA81500DB9393 /* TaskDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				C9A513A3218B3CB500DB9393 /* LaunchScreen.storyboard */,
 				C9A5139E218B3CB400DB9393 /* Main.storyboard */,
 				C9A513B5218B847C00DB9393 /* AddNewTask.storyboard */,
+				C9A513BB218CA81500DB9393 /* TaskDetails.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				C9A513A5218B3CB500DB9393 /* LaunchScreen.storyboard in Resources */,
 				C9A513A2218B3CB500DB9393 /* Assets.xcassets in Resources */,
 				C9A513B6218B847C00DB9393 /* AddNewTask.storyboard in Resources */,
+				C9A513BC218CA81500DB9393 /* TaskDetails.storyboard in Resources */,
 				C9A513A0218B3CB400DB9393 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
