@@ -114,7 +114,15 @@
                 <viewControllerPlaceholder storyboardName="AddNewTask" id="9ip-Ab-XUi" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZu-6n-waf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="-72"/>
+            <point key="canvasLocation" x="1842" y="-73"/>
+        </scene>
+        <!--TaskDetails-->
+        <scene sceneID="kIV-by-aNS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TaskDetails" id="Bub-6y-suP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzD-aP-qf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="45"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ovc-yQ-F98">
