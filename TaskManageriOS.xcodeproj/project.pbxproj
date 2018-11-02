@@ -16,6 +16,7 @@
 		C9A513B4218B58A700DB9393 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A513B3218B58A700DB9393 /* TaskManager.swift */; };
 		C9A513B6218B847C00DB9393 /* AddNewTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A513B5218B847C00DB9393 /* AddNewTask.storyboard */; };
 		C9A513B8218B85A900DB9393 /* AddNewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A513B7218B85A900DB9393 /* AddNewTaskViewController.swift */; };
+		C9A513BA218CA2E700DB9393 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A513B9218CA2E700DB9393 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C9A513B3218B58A700DB9393 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		C9A513B5218B847C00DB9393 /* AddNewTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewTask.storyboard; sourceTree = "<group>"; };
 		C9A513B7218B85A900DB9393 /* AddNewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskViewController.swift; sourceTree = "<group>"; };
+		C9A513B9218CA2E700DB9393 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,6 @@
 		C9A51399218B3CB400DB9393 /* TaskManageriOS */ = {
 			isa = PBXGroup;
 			children = (
-				C9A513B2218B4FDA00DB9393 /* Components */,
 				C9A513AE218B47FF00DB9393 /* Data Models */,
 				C9A513B0218B48E300DB9393 /* Utilities */,
 				C9A513B1218B490900DB9393 /* Storyboards */,
@@ -95,6 +96,7 @@
 				C9A5139A218B3CB400DB9393 /* AppDelegate.swift */,
 				C9A513A1218B3CB500DB9393 /* Assets.xcassets */,
 				C9A513B3218B58A700DB9393 /* TaskManager.swift */,
+				C9A513B9218CA2E700DB9393 /* Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -107,13 +109,6 @@
 				C9A513B5218B847C00DB9393 /* AddNewTask.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		C9A513B2218B4FDA00DB9393 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A513BA218CA2E700DB9393 /* Utilities.swift in Sources */,
 				C9A5139D218B3CB400DB9393 /* TaskListViewController.swift in Sources */,
 				C9A513AD218B460200DB9393 /* Task.swift in Sources */,
 				C9A513B4218B58A700DB9393 /* TaskManager.swift in Sources */,
