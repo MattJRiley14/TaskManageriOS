@@ -109,7 +109,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="taskListTableView" destination="NjG-AI-365" id="tWU-RB-kNS"/>
-                        <segue destination="Bub-6y-suP" kind="show" id="m3o-A2-WO1"/>
+                        <segue destination="Bub-6y-suP" kind="show" identifier="showTaskDetails" id="m3o-A2-WO1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

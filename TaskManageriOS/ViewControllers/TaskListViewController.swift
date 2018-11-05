@@ -21,14 +21,25 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? TaskDetailsViewController {
+            destination.task = currentTask
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return TaskManager.sharedInstance.getTaskCount()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        currentTask = TaskManager.sharedInstance.getTask(at: indexPath.row)
+        self.performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
     }
 
 
