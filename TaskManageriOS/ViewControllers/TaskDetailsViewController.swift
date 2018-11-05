@@ -10,7 +10,9 @@ import UIKit
 
 class TaskDetailsViewController: UIViewController {
     
-        
+    @IBOutlet weak var taskTitleLabel: UILabel!
+    @IBOutlet weak var taskDescriptionLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
