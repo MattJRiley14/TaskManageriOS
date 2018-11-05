@@ -11,11 +11,16 @@ import UIKit
 class TaskDetailsViewController: UIViewController {
     
     @IBOutlet weak var taskTitleLabel: UILabel!
-    @IBOutlet weak var taskDescriptionLabel: UILabel!
+    @IBOutlet weak var taskDetailsLabel: UILabel!
     
+    
+    var task: Task!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        taskTitleLabel.text = task.title
+        taskDetailsLabel.text = task.taskDetails
 
         // Do any additional setup after loading the view.
     }
