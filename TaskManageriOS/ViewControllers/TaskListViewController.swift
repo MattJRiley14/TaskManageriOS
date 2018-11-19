@@ -57,7 +57,44 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
         }
         return cell
     }
+    
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { _, _ in
+            TaskManager.sharedInstance.removeTask(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        
+        let taskForIndex = TaskManager.sharedInstance.getTask(at: indexPath.row)
+        
+        let title = taskForIndex.notCompleted ? "Mark Complete" : "Mark Not Complete"
+        
+        let markCompleteOrNotAction = UITableViewRowAction(style: .normal, title: title) { _, _ in
+            TaskManager.sharedInstance.markTaskCompleteOrNot(at: indexPath.row)
+            tableView.reloadRows(at: [indexPath], with: .fade)
+        }
+        
+        deleteAction.backgroundColor = UIColor.red
+        markCompleteOrNotAction.backgroundColor = UIColor.darkGray
+        
+        return [deleteAction, markCompleteOrNotAction]
+    }
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
