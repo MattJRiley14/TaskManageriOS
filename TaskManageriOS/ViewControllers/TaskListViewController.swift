@@ -34,16 +34,32 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         currentTask = TaskManager.sharedInstance.getTask(at: indexPath.row)
-        self.performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
-        
+        self.performSegue(withIdentifier: "showTaskDetails", sender: self)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell") as! TaskTableViewCell
         
+        let currentTask = TaskManager.sharedInstance.getTask(at: indexPath.row)
+        
+        cell.titleLabel.text = currentTask.title
+        
+        if currentTask.notCompleted {
+            cell.statusView.backgroundColor = UIColor.green
+        } else {
+            cell.statusView.backgroundColor = UIColor.red
+        }
+        
+        if let completeByDate = currentTask.completeByDate {
+            cell.completeByDateLabel.text = formatDate(completeByDate)
+        } else {
+            cell.completeByDateLabel.text = ""
+        }
+        return cell
     }
-
-
 }
+
+
 
 
 
