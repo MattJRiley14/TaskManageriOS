@@ -10,9 +10,9 @@ import UIKit
 
 class AddNewTaskViewController: UIViewController {
     
+    @IBOutlet weak var taskTitleTextField: UITextField!
+    @IBOutlet weak var taskDetailsTextField: UITextField!
     
-    
-    //ADD COMMENTS TO ENTIRE PROJECT!!!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,5 +30,39 @@ class AddNewTaskViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func showErrorAlert() {
+        let alertController = UIAlertController(title: "Error", message: "You must enter a title and details for the task", preferredStyle: .actionSheet)
+        let closeAction = UIAlertAction(title: "Close", style: .default) { _ in
+            self.taskTitleTextField.text = ""
+            self.taskDetailsTextField.text = ""
+        }
+        alertController.addAction(closeAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func submitButtonTapped(_ sender: Any) {
+        guard let title = taskTitleTextField.text, title.trimmingCharacters(in: .whitespacesAndNewlines) != "",
+            let taskDetails = taskDetailsTextField.text, taskDetails.trimmingCharacters(in: .whitespacesAndNewlines) != "" else {
+                showErrorAlert()
+                return
+        }
+        
+        let newTask = Task(title: title, taskDetails: taskDetails)
+        
+        TaskManager.sharedInstance.addTask(task: newTask)
+        
+        self.performSegue(withIdentifier: "unwindToTaskListWithSegue", sender: self)
+    }
+    //MAKE A COMMIT!!!
+    //ADD COMMENTS TO ENTIRE PROJECT!!!
 }
+
+
+
+
+
+
+
+
+
