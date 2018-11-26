@@ -76,7 +76,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="hJC-1S-7V1">
                             <connections>
                                 <action selector="submitButtonTapped:" destination="OUM-YT-boo" id="kz6-qq-9zb"/>
-                                <segue destination="Yzm-VB-ZRa" kind="unwind" identifier="unwindToTaskListWithSegue" unwindAction="unwindToTaskListWithSegue:" id="Q7T-Rz-qcU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -84,6 +83,7 @@
                     <connections>
                         <outlet property="taskDetailsTextField" destination="sbv-bB-5kz" id="d0b-ow-LpE"/>
                         <outlet property="taskTitleTextField" destination="ZSy-DK-MZB" id="SBt-cT-oDh"/>
+                        <segue destination="Yzm-VB-ZRa" kind="unwind" identifier="unwindToTaskListWithSegue" unwindAction="unwindToTaskListWithSegue:" id="7CS-Kg-c92"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NI8-Pj-7Y1" userLabel="First Responder" sceneMemberID="firstResponder"/>

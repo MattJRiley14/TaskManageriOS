@@ -54,7 +54,6 @@ class AddNewTaskViewController: UIViewController {
         
         self.performSegue(withIdentifier: "unwindToTaskListWithSegue", sender: self)
     }
-    //MAKE A COMMIT!!!
     //ADD COMMENTS TO ENTIRE PROJECT!!!
 }
 
