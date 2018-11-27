@@ -9,7 +9,6 @@
 import UIKit
 
 class AddNewTaskViewController: UIViewController {
-    
     @IBOutlet weak var taskTitleTextField: UITextField!
     @IBOutlet weak var taskDetailsTextField: UITextField!
     
@@ -56,6 +55,8 @@ class AddNewTaskViewController: UIViewController {
     }
     //ADD COMMENTS TO ENTIRE PROJECT!!!
 }
+
+
 
 
 

@@ -8,17 +8,13 @@
 
 import UIKit
 
+// This is the class that represents our TaskTableViewCell that will be used in our TaskListTableView
 class TaskTableViewCell: UITableViewCell {
-    
+    //Outlets for what will be shown in the Cell
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var completeByDateLabel: UILabel!
     @IBOutlet weak var statusView: UIView!
     
-    
-    
-    
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,7 +25,4 @@ class TaskTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
-
-

@@ -18,19 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Uur-iH-6oS" userLabel="TaskLists">
-                                <rect key="frame" x="0.0" y="597" width="375" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="liG-at-i7E"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="All"/>
-                                    <segment title="Uncompleted"/>
-                                    <segment title="Completed"/>
-                                </segments>
-                            </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NjG-AI-365" userLabel="Task List Table View">
-                                <rect key="frame" x="0.0" y="116" width="375" height="476"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="79" id="hGj-fv-u7i" userLabel="taskCell" customClass="TaskTableViewCell" customModule="TaskManageriOS" customModuleProvider="target">
@@ -90,13 +79,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NjG-AI-365" secondAttribute="trailing" id="4K0-Ij-9lO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uur-iH-6oS" secondAttribute="trailing" id="67X-fU-Up6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uur-iH-6oS" secondAttribute="bottom" constant="20" id="Bvv-tp-AKO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uur-iH-6oS" secondAttribute="bottom" id="SD6-Yg-yM7"/>
-                            <constraint firstItem="Uur-iH-6oS" firstAttribute="top" secondItem="NjG-AI-365" secondAttribute="bottom" constant="5" id="aBb-HK-1Mq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NjG-AI-365" secondAttribute="bottom" id="Jwx-io-87z"/>
                             <constraint firstItem="NjG-AI-365" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iuz-AR-IO6"/>
                             <constraint firstItem="NjG-AI-365" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nwa-2s-3th"/>
-                            <constraint firstItem="Uur-iH-6oS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zWA-sH-6Ws"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
